@@ -1,6 +1,7 @@
-# 1. Decisions at the Crossroad
-# Task 1: Code Correction
-
+"""
+1. Decisions at the Crossroad
+Task 1: Code Correction
+"""
 number = int(input("Enter a number: "))
 
 if number > 0:
@@ -10,16 +11,13 @@ elif number == 0:
 else:
     print("The number is negative.")
 
-# 2. The Greatest Showdown
-# Objective:
-# Harness the power of conditional statements to compare and determine values.
-
 print()
-
-# Task 1: Identify the Greatest
-# Write a Python program that prompts the user to enter three numbers. 
-# The program should then identify and print out the largest number among the three.
-    
+"""
+2. The Greatest Showdown
+Task 1: Identify the Greatest
+Write a Python program that prompts the user to enter three numbers. 
+The program should then identify and print out the largest number among the three.
+"""
 num1 = int(input("Enter first  number: "))
 num2 = int(input("Enter second number: "))
 num3 = int(input("Enter third  number: "))
@@ -32,9 +30,10 @@ elif num2 >= num1 and num2 >= num3:
 else:
     print(num3)
 
-# Task 2: Identify the Smallest
-# Extend your program from Task 1 to also determine the smallest number among the three and print it out.
-    
+"""
+Task 2: Identify the Smallest
+Extend your program from Task 1 to also determine the smallest number among the three and print it out.
+"""    
 print("\n Smallest...")
 if num1 <= num2 and num1 <= num3:
     print(num1)
@@ -43,15 +42,16 @@ elif num2 <= num1 and num2 <= num3:
 else:
     print(num3)
 
-# Task 3: Equality Check
-# Enhance your program to handle cases where two or all of the numbers are equal. 
-# The program should display appropriate messages like 
-# "Two numbers are equal and the largest" or "All numbers are equal".
+"""
+Task 3: Equality Check
+Enhance your program to handle cases where two or all of the numbers are equal. 
+The program should display appropriate messages like 
+"Two numbers are equal and the largest" or "All numbers are equal".
 
-# Expected Outcome: If we provide the numbers 3, 3, and 4, it should print out that 
-# "The smallest number is 3. The largest number is 4. There are two numbers equal to each other."
-# Printing out which numbers are equal would be a great added bonus.
-    
+Expected Outcome: If we provide the numbers 3, 3, and 4, it should print out that 
+"The smallest number is 3. The largest number is 4. There are two numbers equal to each other."
+Printing out which numbers are equal would be a great added bonus.
+"""
 print("\n Equality Check... \n")
 if num1 >= num2 and num1 >= num3:
     largest = num1
@@ -94,18 +94,16 @@ else:
 
 print()
 
+"""
+3. Leap Year Explorer
+Task 1: Leap Year Checker
+Every year that is exactly divisible by four is a leap year, 
+except for years that are exactly divisible by 100, 
+but these centurial years are leap years if they are exactly divisible by 400.
 
-# 3. Leap Year Explorer
-
-# Task 1: Leap Year Checker
-
-# Every year that is exactly divisible by four is a leap year, 
-# except for years that are exactly divisible by 100, 
-# but these centurial years are leap years if they are exactly divisible by 400.
-
-# Expected Outcome: If you test the year 1900, is should be False. 
-# The year 2000 should be True. The year 2024 should be True
-
+Expected Outcome: If you test the year 1900, is should be False. 
+The year 2000 should be True. The year 2024 should be True
+"""
 year = int(input("Enter Year: "))
 if year % 4 == 0:
     if year % 100 == 0:
